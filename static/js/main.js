@@ -15,3 +15,9 @@ function redirect_to(v)
             break;
     }
 }
+
+function scrolto(id)
+{
+    const e = document.getElementById(id);
+    e.scrollIntoView({behavior: 'smooth'});
+}
