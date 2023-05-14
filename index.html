@@ -23,6 +23,10 @@
             <i class="fa fa-user w3-xxlarge"></i>
             <p>À-propos</p>
         </a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-blue" onclick="scrolto('projects');">
+            <i class="fa fa-gear w3-xxlarge"></i>
+            <p>Mes projets</p>
+        </a>
         <a class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-blue" onclick="scrolto('contact');">
             <i class="fa fa-envelope w3-xxlarge"></i>
             <p>Contacts</p>
@@ -33,6 +37,7 @@
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a class="w3-bar-item w3-button w3-hover-text-blue" style="width:25% !important" onclick="scrolto('home');">Page d'acceuil</a>
             <a class="w3-bar-item w3-button w3-hover-text-blue" style="width:25% !important" onclick="scrolto('about');">À-propos</a>
+            <a class="w3-bar-item w3-button w3-hover-text-blue" style="width:25% !important" onclick="scrolto('projects');">Mes projets</a>
             <a class="w3-bar-item w3-button w3-hover-text-blue" style="width:25% !important" onclick="scrolto('contact');">Contacts</a>
         </div>
         </div>
@@ -44,14 +49,14 @@
             <img src="/static/images/secu.jpg" alt="cyber security" class="w3-image" width="992" height="1108"> <!-- got from https://pixabay.com/fr/photos/s%c3%a9curit%c3%a9-protection-antivirus-265130/ -->
         </header>
 
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="about">
             <h2 class="w3-text-light-grey">À-propos de moi</h2>
             <hr style="width:200px" class="w3-opacity">
             <p>Je suis un jeune développeur passionné par l'informatique, et plus particulièrement la cyber sécurité.<br>
                 Je suis en études superieurs à l'école EPITECH.
             </p>
         </div>
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+        <div class="w3-content w3-justify w3-text-grey w3-padding-16">
             <h2 class="w3-text-light-grey">Mon CV</h2>
             <hr style="width:200px" class="w3-opacity">
             <a href="/static/pdf/CV.pdf" download>
@@ -60,6 +65,39 @@
                 </button>
             </a>
         </div>
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="projects">
+            <h3 class="w3-padding-16 w3-text-light-grey">Mes projets</h3>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half w3-margin-bottom" onclick="openNewTab('https://github.com/Tech0ne/RemoteWiFi-client');">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Remote WiFi</li>
+                        <li class="w3-padding-16">Python</li>
+                        <li class="w3-padding-16">Github</li>
+                        <li class="w3-padding-16">Hors école</li>
+                    </ul>
+                </div>
+
+                <div class="w3-half w3-margin-bottom" onclick="openNewTab('https://github.com/Tech0ne/EPITECH-MyHunter');">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">MyHunter</li>
+                        <li class="w3-padding-16">C</li>
+                        <li class="w3-padding-16">Github</li>
+                        <li class="w3-padding-16">Pour l'école</li>
+                    </ul>
+                </div>
+
+                <div class="w3-half w3-margin-bottom" onclick="openNewTab('https://github.com/Tech0ne/Learn-Hacking');">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Learn-Hacking</li>
+                        <li class="w3-padding-16">Python, C, HTML...</li>
+                        <li class="w3-padding-16">Github</li>
+                        <li class="w3-padding-16">Hors école</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div class="w3-content w3-justify w3-text-grey w3-padding-64">
             <h2 class="w3-text-light-grey">Mes compétences</h3>
             <hr style="width:200px" class="w3-opacity">
