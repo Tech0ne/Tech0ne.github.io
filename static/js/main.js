@@ -12,7 +12,7 @@ function redirect_to(v)
             openNewTab('https://github.com/Tech0ne/');
             break;
         case 'linkedin':
-            openNewTab('https://www.linkedin.com/in/cl%C3%A9ment-piasco-7362b3258');
+            openNewTab('https://www.linkedin.com/in/clément-piasco');
             break;
         default:
             location.href = '/404.html';
