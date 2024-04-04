@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Template is from W3schools.com. All credits are for them, I actualy only changed some values. Frontend isn't my type -->
+<html>
+    <head>
+        <title>Clément PIASCO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="/static/images/favicon.png">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+        <script src="/static/js/main.js"></script>
+    </head>
+    <body class="w3-black">
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <img src="/static/images/face.jpg" style="width:100%">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-blue" onclick="scrolto('home');">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>Page d'acceuil</p>
+        </a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-blue" onclick="scrolto('about');">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>À-propos</p>
+        </a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-blue" onclick="scrolto('projects');">
+            <i class="fa fa-gear w3-xxlarge"></i>
+            <p>Mes projets</p>
+        </a>
+        <a class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-blue" onclick="scrolto('contact');">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>Contacts</p>
+        </a>
+        </nav>
+
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+            <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+                <a class="w3-bar-item w3-button w3-hover-text-blue" style="width:25% !important" onclick="scrolto('home');">Page d'acceuil</a>
+                <a class="w3-bar-item w3-button w3-hover-text-blue" style="width:25% !important" onclick="scrolto('about');">À-propos</a>
+                <a class="w3-bar-item w3-button w3-hover-text-blue" style="width:25% !important" onclick="scrolto('projects');">Mes projets</a>
+                <a class="w3-bar-item w3-button w3-hover-text-blue" style="width:25% !important" onclick="scrolto('contact');">Contacts</a>
+            </div>
+        </div>
+        <div class="w3-padding-large" id="main">
+            <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+                <p>Redirection. Veuillez patienter...</p>
+                <p>Si la redirection ne fonctionne pas, veuillez cliquer <a href="https://www.linkedin.com/in/cl%C3%A9ment-piasco-7362b3258">ici</a></p>
+            </header>
+        </div>
+        <script>
+            window.location.replace("https://www.linkedin.com/in/cl%C3%A9ment-piasco-7362b3258");
+        </script>
+    </body>
+</html>
