@@ -2,7 +2,7 @@
 title: Simple Buffer Overflow
 author: tech0ne
 date: 2025-01-28 12:30:00 +0100
-categories: [Research, LowLevel]
+categories: [research, lowlevel]
 comments: true
 toc: true
 pin: false
@@ -156,6 +156,11 @@ You could treat a struct as a box, containing other boxes (variables).
 In memory, the struct remote_user look like this :
 
 ```mermaid
+---
+config:
+  look: handDrawn
+  theme: dark
+---
 classDiagram
 remote_user : char username[64]
 remote_user : int is_admin

@@ -2,7 +2,7 @@
 title: Bind/Reverse Shell
 author: tech0ne
 date: 2025-02-17 13:30:00 +0100
-categories: [Miscellaneous]
+categories: [miscellaneous]
 comments: true
 toc: true
 pin: false
