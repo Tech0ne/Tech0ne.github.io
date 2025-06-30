@@ -435,10 +435,11 @@ First thing, let's spawn a _real_ shell.
 
 This can be done using multiple commands (You can find a list of them [here](https://wiki.zacheller.dev/pentest/privilege-escalation/spawning-a-tty-shell))
 
-The 2 I use the most are :
+The ones I use the most are :
 
 - `python3 -c 'import pty; pty.spawn("/bin/bash")'` (Which doesn't work in our case, as python3 isn't installed)
 - `/bin/bash -i`
+- `script -qc /bin/bash /dev/null` (Discovered it not that long ago. It's really powerfull when nothing else is available)
 
 Once that's done, sudo should work.
 
