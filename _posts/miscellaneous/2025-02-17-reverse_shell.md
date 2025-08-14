@@ -465,7 +465,23 @@ All that should work.
 
 If, for example, you use Zsh (which you should, it's a great shell), the shell will mess with your stty configuration.
 
-For that reason, it's best to chain the `stty raw -echo` and `fg` as `stty raw -echo; fg` in order to execute both the commands without the shell messing with it.
+For that reason, it's best to chain the `stty raw -echo` and `fg` as `stty raw -echo && fg` in order to execute both the commands without the shell messing with it.
+
+Also note that the remote shell might not have the same size as our local one.
+
+Due to this, sometimes the line will wrap around, or tools like `vim` or `nano` will be smaller or bigger than the actual revshell.
+
+To handle that, before running `fg`, you can locally run `stty -a` to see infos about your local shell, including rows and collums.
+
+You can then set is using `stty rows xxx && stty rows yyy` on the remote shell.
+
+So, we can do the following:
+
+- On our revshell:
+- `script -qc /bin/bash /dev/null`
+- Ctrl+Z
+- `stty raw -echo && stty -a && fg`
+- `stty rows xxx && stty cols yyy` (replace both xxx and yyy with the actual terminal size)
 
 ## Alternatives
 
