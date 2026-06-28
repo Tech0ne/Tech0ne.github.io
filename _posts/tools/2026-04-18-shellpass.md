@@ -21,7 +21,7 @@ Here, we'll go in a few details on what it is, how it works, what it it's curren
 
 [Shellpass](https://github.com/tech0ne/shellpass) is a TUI based password manager.
 
-You can find it's homepage [here](https://tech0ne.github.com/shellpass/).
+You can find it's homepage [here](https://tech0ne.github.io/shellpass/).
 
 The goal of this project is to walk away from the current standard of uploading stuff to servers just to save your password.
 
